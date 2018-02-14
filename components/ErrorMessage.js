@@ -1,0 +1,1 @@
+import { styled } from 'styled-components';const Wrapper = styled.aside`    padding: 1.5em;    font-size: 14px;    color: white;    background-color: red;`()export default ({message}) => <Wrapper>{message}</Wrapper>

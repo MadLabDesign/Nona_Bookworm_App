@@ -1,0 +1,1 @@
+import { observable } from 'mobx';class DrawerStore {    @observable isOpen = false;    toggle() { this.isOpen = !this.isOpen; }}export default new DrawerStore();

@@ -1,0 +1,1 @@
+import gql from 'graphql-tag';export const loggedInUserQuery = gql`{    loggedInUser {        id        firstName        lastName        email        ieqPackage        ieqCompleted    }}`

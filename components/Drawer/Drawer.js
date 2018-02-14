@@ -1,0 +1,1 @@
+import { observer } from 'mobx-react';import store from './store.js';export default observer(() =>    <div>        <p>Is Open: {store.isOpen ? 'Yes' : 'No'}</p>        <button type='button' onClick={() => store.toggle()}>{store.isOpen ? 'Close' : 'Open'} drawer</button>    </div>,)

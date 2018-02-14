@@ -1,0 +1,1 @@
+import SigninLayout from '../components/Layout/SigninLayout';import ForgotPasswordForm from '../components/ForgotPasswordForm';import { withDefaultsUnauthenticated } from '../lib/withDefaults';const ForgotPassword = () =>    <SigninLayout>        <ForgotPasswordForm/>    </SigninLayout>export default withDefaultsUnauthenticated(ForgotPassword)

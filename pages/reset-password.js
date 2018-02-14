@@ -1,0 +1,1 @@
+import SigninLayout from '../components/Layout/SigninLayout';import ResetPasswordForm from '../components/ResetPasswordForm';import { withDefaultsUnauthenticated } from '../lib/withDefaults';const ResetPassword = ({url}) =>    <SigninLayout>        <ResetPasswordForm {...url.query}/>    </SigninLayout>export default withDefaultsUnauthenticated(ResetPassword)

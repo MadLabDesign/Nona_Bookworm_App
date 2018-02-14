@@ -1,0 +1,1 @@
+import styled from 'styled-components'export default styled.h1`  color: #0900ff;  font-size: 50px;`

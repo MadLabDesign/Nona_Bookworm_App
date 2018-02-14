@@ -1,0 +1,22 @@
+{
+  "name": "burn-e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "debug": "nodemon --inspect index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "graphql-yoga": "^1.2.1",
+    "guid": "^0.0.12",
+    "jsonwebtoken": "^8.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}

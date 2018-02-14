@@ -1,0 +1,1 @@
+const nextRoutes = require('next-routes')const routes = module.exports = nextRoutes()routes.add('landing-with-guid', '/guid/:guid');routes.add('reset-password', '/reset-password/:guid');

@@ -1,0 +1,1 @@
+import { observer } from 'mobx-react';import store from './store.js';export default observer(() =>    <div>        <p>Counter: {store.counter}</p>        <button type='button' onClick={() => store.increment(1)}>Increment</button>        <button type='button' onClick={() => store.decrement(1)}>Decrement</button>    </div>,)
