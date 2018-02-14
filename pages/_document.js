@@ -49,6 +49,7 @@ export default class MyDocument extends Document {
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
                 />
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
                 <link rel="manifest" href="/static/manifest.json"/>
             </Head>
             <body>

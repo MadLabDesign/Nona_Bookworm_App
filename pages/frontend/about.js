@@ -3,6 +3,7 @@ import withMaterial from "../../lib/withMaterial";
 import {Grid, Paper, Typography} from "material-ui";
 
 import styled from "styled-components";
+import {Pagination} from "semantic-ui-react";
 
 const PaperContainer = styled(Paper)`
    && {  
@@ -52,6 +53,7 @@ const page = () =>
             </Paper>
 
         </Grid>
+        <Pagination></Pagination>
 
     </BaseLayout>
 

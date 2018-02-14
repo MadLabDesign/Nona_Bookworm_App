@@ -17,6 +17,8 @@ import AccountIcon from 'material-ui-icons/Fingerprint';
 import styled from 'styled-components';
 import {Avatar, Badge, Button, Grid} from "material-ui";
 import Link from "../Link";
+import ButtonSelection from "../FilterSearch/ButtonSelection";
+import Header from "../Header";
 
 
 const drawerWidth = 220;
@@ -105,6 +107,7 @@ const Content = styled.main`
 
 const mailFolderListItems = (
     <div>
+
         <Link href="/frontend/store">
             <ListItem button>
                 <ListItemIcon>
@@ -187,6 +190,7 @@ class BaseLayout extends React.Component {
         return <Root>
             <AppFrame>
 
+
                 <StyledAppBar>
                     <Toolbar>
                         <StyledIconButton
@@ -196,12 +200,7 @@ class BaseLayout extends React.Component {
                         >
                             <MenuIcon/>
                         </StyledIconButton>
-
-                            <Typography>
-                                <Link button href="/frontend/explore">Explore</Link>
-                                <Link button href="/frontend/know">Know</Link>
-                                <Link button href="/frontend/grow">Grow</Link>
-                            </Typography>
+                        <Header></Header>
                     </Toolbar>
                 </StyledAppBar>
                 <Hidden mdUp>

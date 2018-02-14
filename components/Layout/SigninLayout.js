@@ -7,19 +7,18 @@ import Link from '../Link';
 
 const HeroArea = styled.div`
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/static/images/hero.jpg");
-    background-size: cover;
+    background-size: 100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
 `;
 
 const SigninLayout = ({children}) => (
-    <div>
+
         <Grid container spacing={0}>
             <Grid item md={7}>
                 <Hidden only={['xs', 'sm']}>
-
                     <HeroArea/>
-
                 </Hidden>
             </Grid>
             <Grid item xs={12} sm={12} md={5}>
@@ -28,25 +27,13 @@ const SigninLayout = ({children}) => (
                     <Grid item xs/>
 
                     <Grid item xs >
-                        <Link href="/">
-                            <img style={{width: '100%', maxWidth: '200px'}} src="../static/images/logo_full_dark.svg"
-                                 alt=""/>
-                        </Link>
-
                         {children}
-
-                        <Typography variant="button">
-                            Privacy Statement / Disclaimers / Legal Stuff
-                        </Typography>
-
                     </Grid>
-                    
+
                     <Grid item xs></Grid>
                 </Grid>
             </Grid>
         </Grid>
-
-    </div>
 )
 
 
