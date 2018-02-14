@@ -66,10 +66,7 @@ const StyledIconButton = styled(IconButton)`
         && {
         color: #2B4866;
         }
-        &&{
-          @media screen and (min-width: 961px) {
-display: none;
-}
+  
 }
 
 
@@ -201,12 +198,6 @@ class BaseLayout extends React.Component {
                         </StyledIconButton>
 
                             <Typography>
-                                <Hidden smDown>
-                                    <Link href="/frontend/index"><img src="/static/images/logo_full_dark.png"/></Link>
-                                </Hidden>
-                                <Hidden mdUp>
-                                    <Link href="/frontend/index"><img src="/static/images/icon_nine_dark.png"/></Link>
-                                </Hidden>
                                 <Link button href="/frontend/explore">Explore</Link>
                                 <Link button href="/frontend/know">Know</Link>
                                 <Link button href="/frontend/grow">Grow</Link>

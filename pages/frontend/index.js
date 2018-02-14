@@ -3,6 +3,7 @@ import withMaterial from "../../lib/withMaterial";
 import IntroCard from "../../components/IntroCard";
 import { explore, grow, know } from '../../lib/colors';
 import { Component } from 'react';
+import React from "react";
 
 
 
@@ -17,9 +18,6 @@ const page = () =>
 
     <BaseLayout>
 
-        <IntroCard color={explore} headerTitle={'Explore'} buttonLink="/frontend/explore">{content.explore}</IntroCard>
-        <IntroCard color={know} headerTitle={'Know'} buttonLink="/frontend/know">{content.know}</IntroCard>
-        <IntroCard color={grow} headerTitle={'Grow'} buttonLink="/frontend/grow">{content.grow}</IntroCard>
     </BaseLayout>
 
 export default withMaterial(page)
